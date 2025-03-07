@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STAM-BULLY | Login & Register</title>
+    <link rel="stylesheet" href="style2.css">
+    <script defer src="script2.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kare&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Terms & Conditions Popup -->
+<div class="overlay" id="overlay"></div>
+<div class="pop-up" id="termsPopup">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h2>TERMS & CONDITIONS</h2>
+    <h3>Welcome to Our Website</h3>
+    <p><strong>By using our platform, you agree with the following responsibilities:</strong></p>
+    <p>You are required to provide accurate and truthful information when submitting any reports. You will use the platform only for lawful and authorized purposes. You agree not to engage in any activity that could harm the integrity, functionality, or security of our website.</p>
+    <p><strong>Data Privacy:</strong></p>
+    <p>We take your privacy seriously. Any personal information you provide will be handled with care in accordance with our Privacy Policy. We will never share your data with third parties without your consent, unless required by law.</p>
+    <p>When you submit a report, it will be reviewed by our team. If the report is found to be valid, we will take appropriate action. You may be contacted for further clarification or to update you on the outcome of your submission.</p>
+    <div class="buttons">
+        <button class="accept" onclick="acceptTerms()">Accept</button>
+        <button class="reject" onclick="rejectTerms()">Reject</button>
+    </div>
+</div>
+
+    <header>
+        <div class="logo-container">
+            <a href="stopbullying2.html">
+        <img src="images/stambullylogo_nobg.png" alt="stambullylogo">
+    </a>
+    <h1 class="logo">STAM-BULLY</h1>
+</div>
+        </div>
+        <nav>
+            <a href="tamservice.html" class="btn">TAM-Service</a>
+            <a href="typesofbullying.html" class="btn">What is Bullying?</a>
+            <a href="createreport.html" class="btn">Create Report</a>
+            <a href="reporthistory.html" class="btn">Report History</a>
+            <button class="btn login-btn" id="loginBtn">Log in</button>
+        </nav>
+    </header>
+
+    <section class="hero">
+      <section class="hero">
+    <div class="image-container">
+        <img src="images/homepage.png" alt="Homepage">
+    </div>
+</section>
+
+    <div id="loginPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div class="form login-form active" id="login-form">
+                <h2>STAM BULLY</h2>
+                <p>Good to see you again! Log in to continue your journey.</p>
+                <form>
+    <div class="input-group">
+        <input type="email" id="email" placeholder="School Email">
+        <p id="email-error" class="error-message"></p> <!-- Error message below input -->
+    </div>
+    <div class="input-group">
+        <input type="password" id="password" placeholder="Password">
+        <p id="password-error" class="error-message"></p> <!-- Error message below input -->
+    </div>
+    <button type="submit" class="btn" id="signInBtn">Log in</button>
+    <button type="button" class="anonymous-btn" id="anonymousBtn">Remain Anonymous</button>
+</form>
+            </div>
+        </div>
+    </div>
+	<!-- Login Successful Popup -->
+<div id="successPopup" class="popup">
+    <div class="popup-content">
+        <h2>Log in Successful!</h2>
+        <button id="closeSuccessPopup" class="btn">OK</button>
+    </div>
+</div>
+
+
+    <script src="script2.js"></script>
+</body>
+</html>
