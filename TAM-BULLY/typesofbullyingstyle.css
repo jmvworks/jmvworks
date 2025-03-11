@@ -197,14 +197,24 @@ header img {
 
 /* Align logo and text */
 header {
+    background-color: #FFF;
+    color: green;
     display: flex;
-    align-items: center; /* Align items in the center */
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
     gap: 10px; /* Space between logo and text */
 }
 
 nav {
     display: flex;
     align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -261,4 +271,11 @@ nav a, .prevent-item a {
     color: green;
     margin: 0;
 }
-  
+@media only screen and (max-width: 767px) {
+    .logo-container {
+    margin: 5px auto !important;
+    }
+    nav {
+    margin-bottom: 5px;
+    }
+}
