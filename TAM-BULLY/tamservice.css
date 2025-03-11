@@ -106,16 +106,25 @@ h1 {
         width: 10px; /* Smaller size for mobile */
         margin-top: 20px;
     }
+	
+    .logo-container {
+    margin: 5px auto !important;
+    }
+    nav {
+    margin-bottom: 5px;
+    }
 }
 /* Header */
 header {
     background-color: #FFF;
     color: green;
     display: flex;
-	padding: 15px 0;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     padding: 10px 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 /* Logo Container - Ensures Logo and "STAM-BULLY" Text are Side by Side */
@@ -145,6 +154,8 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Navigation Buttons */
