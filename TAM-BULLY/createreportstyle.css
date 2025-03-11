@@ -151,4 +151,10 @@ nav {
 		grid-template-columns: repeat(2, 1fr);
 		gap: 10px;
 	}
+	form#reportForm {
+	    display: block;
+	}
+	.form-group {
+	    margin-bottom: 10px;
+	}
 }
