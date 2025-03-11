@@ -271,7 +271,7 @@ nav a, .prevent-item a {
     color: green;
     margin: 0;
 }
-@media only screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .logo-container {
     margin: 5px auto !important;
     }
