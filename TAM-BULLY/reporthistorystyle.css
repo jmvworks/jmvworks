@@ -17,14 +17,6 @@ body {
 }
 
 /* Header */
-header {
-    background-color: #FFF;
-    color: green;
-    padding: 15px 0;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-}
 
 /* Container for logo image and text */
 .logo-container {
@@ -49,8 +41,15 @@ header img {
 
 /* Align logo and text */
 header {
+    background-color: #FFF;
+    color: green;
     display: flex;
-    align-items: center; /* Align items in the center */
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 10px 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
     gap: 10px; /* Space between logo and text */
 }
 
@@ -58,6 +57,8 @@ nav {
     display: flex;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Button Styles */
@@ -146,4 +147,12 @@ nav {
     border: none;
     cursor: pointer;
     font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+    .logo-container {
+    margin: 5px auto !important;
+    }
+    nav {
+    margin-bottom: 5px;
+    }
 }
