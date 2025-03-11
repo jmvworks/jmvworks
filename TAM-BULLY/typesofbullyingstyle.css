@@ -252,36 +252,41 @@ nav {
 	background-color: gold;
 	border: none;
 }
-	/* Container for logo image and text */
+/* Container for logo image and text */
+
+.logo-container {
+	display: flex;
+	align-items: center;
+	/* Aligns image and text side by side */
+	gap: 10px;
+	/* Adds space between image and text */
+}
+.logo {
+	/* Prevents text from wrapping */
+	color: green;
+	margin: 0;
+	text-decoration: none;
+}
+/* Keep underline for all other links */
+
+nav a, .prevent-item a {
+	text-decoration: underline;
+	/* Ensures other links keep their underline */
+}
+@media screen and (max-width: 768px) {
+	header {
+		margin-bottom: 20px;
+	}
 	.logo-container {
-		display: flex;
-		align-items: center;
-		/* Aligns image and text side by side */
-		gap: 10px;
-		/* Adds space between image and text */
+		margin: 5px auto !important;
 	}
-	.logo {
-		/* Prevents text from wrapping */
-		color: green;
-		margin: 0;
-		text-decoration: none;
+	nav {
+		margin-bottom: 5px;
 	}
-	/* Keep underline for all other links */
-	nav a, .prevent-item a {
-		text-decoration: underline;
-		/* Ensures other links keep their underline */
+	.grid {
+		display: block;
 	}
-	@media screen and (max-width: 768px) {
-		.logo-container {
-			margin: 5px auto !important;
-		}
-		nav {
-			margin-bottom: 5px;
-		}
-		.grid {
-			display: block;
-		}
-		.card {
-			display: inline-block;
-		}
+	.card {
+		display: inline-block;
 	}
+}
