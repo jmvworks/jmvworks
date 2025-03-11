@@ -225,6 +225,7 @@ header {
 	align-content: center;
 	gap: 10px;
 	/* Space between logo and text */
+	margin-bottom: 20px;
 }
 nav {
 	display: flex;
@@ -274,9 +275,6 @@ nav a, .prevent-item a {
 	/* Ensures other links keep their underline */
 }
 @media screen and (max-width: 768px) {
-	header {
-		margin-bottom: 20px;
-	}
 	.logo-container {
 		margin: 5px auto !important;
 	}
