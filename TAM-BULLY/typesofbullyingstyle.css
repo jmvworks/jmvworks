@@ -278,4 +278,10 @@ nav a, .prevent-item a {
     nav {
     margin-bottom: 5px;
     }
+	.grid {
+	    display: block;
+	}
+	.card {
+	    display: inline-block;
+	}
 }
