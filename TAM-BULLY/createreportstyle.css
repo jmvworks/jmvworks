@@ -1,152 +1,154 @@
 /* styles.css */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #3ab370;
-    margin: 0;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
+body {
+	font-family: Arial, sans-serif;
+	background-color: #3ab370;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
 .container {
-    background: white;
-    width: 90%;
-    max-width: 900px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+	background: white;
+	width: 90%;
+	max-width: 900px;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 	margin: 50px auto 0;
 }
 .header {
-    background: #04773A;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    border-radius: 6px 6px 0 0;
-	
+	background: #04773A;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 6px 6px 0 0;
 }
 .note {
-    color: orange;
-    font-size: 12px;
-    text-align: center;
-    margin-bottom: 10px;
+	color: orange;
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 10px;
 }
 form {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
 }
 .form-group {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 .wide {
-    grid-column: span 3;
+	grid-column: span 3;
 }
 label {
-    font-weight: bold;
-    font-size: 14px;
+	font-weight: bold;
+	font-size: 14px;
 }
 input, textarea {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
 }
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
 .submit-btn {
-    background: #04773A;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 4px;
-    font-size: 16px;
-    grid-column: span 3;
+	background: #04773A;
+	color: white;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 4px;
+	font-size: 16px;
+	grid-column: span 3;
 }
 .submit-btn:hover {
-    background: #03582C;
+	background: #03582C;
 }
-
 /* Container for logo image and text */
+
 .logo-container {
-    display: flex;
-    align-items: center; /* Aligns image and text side by side */
-    gap: 10px; /* Adds space between image and text */
+	display: flex;
+	align-items: center;
+	/* Aligns image and text side by side */
+	gap: 10px;
+	/* Adds space between image and text */
 }
-
 /* Adjust STAM-BULLY logo size */
+
 header img {
-    height: 60px; /* Adjust height to fit header */
-    width: auto; /* Keep aspect ratio */
-    max-width: 100%; /* Ensure responsiveness */
+	height: 60px;
+	/* Adjust height to fit header */
+	width: auto;
+	/* Keep aspect ratio */
+	max-width: 100%;
+	/* Ensure responsiveness */
 }
-
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    white-space: nowrap; /* Prevents text from wrapping */
+	font-size: 24px;
+	font-weight: bold;
+	white-space: nowrap;
+	/* Prevents text from wrapping */
 }
-
-
 /* Align logo and text */
+
 /* Header */
+
 header {
-    background-color: #FFF;
-    color: green;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 10px 50px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    gap: 10px; /* Space between logo and text */
+	background-color: #FFF;
+	color: green;
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	padding: 10px 50px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	gap: 10px;
+	/* Space between logo and text */
 }
 nav {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-wrap: wrap;
+	justify-content: center;
 }
-
 /* Button Styles */
+
 .btn {
-    background-color: white;
-    border: 2px solid black;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-    text-decoration: none;
-    color: black;
+	background-color: white;
+	border: 2px solid black;
+	padding: 8px 15px;
+	border-radius: 20px;
+	font-size: 14px;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
 }
-
 .btn:hover {
-    background-color: #ddd;
+	background-color: #ddd;
 }
-
 .login-btn {
-    background-color: gold;
-    border: none;																											}
+	background-color: gold;
+	border: none;
 }
-
 @media only screen and (max-width: 767px) {
-    .logo-container {
-    margin: 5px auto !important;
-    }
-    nav {
-    margin-bottom: 5px;
-    }
-    form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    }
+	.logo-container {
+		margin: 5px auto !important;
+	}
+	nav {
+		margin-bottom: 5px;
+	}
+	form {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
 }
